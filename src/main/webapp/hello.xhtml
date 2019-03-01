@@ -9,5 +9,9 @@
     <h:body>
         <h1><h:outputText value="#{helloController.sayHello()}"/></h1>
         <h:outputText value="#{now}"/>
+        <h:form>
+            <h:commandButton value="Submit" action="#{helloController.setMsg('JC')}" />
+        </h:form>
+
     </h:body>
 </h:html>
